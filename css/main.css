@@ -13,7 +13,13 @@ header {
 }
 
 .details {
-	padding: 25px 0 50px;
+	padding: 25px 0 10px;
+}
+
+.details span {
+	/*font-size: 14px;*/
+	color: #83cbca;
+	padding-right: 5px;
 }
 
 strong {
@@ -21,7 +27,7 @@ strong {
 }
 
 a {
-	color: #37404a;
+	color: #767676;
 	text-decoration: underline;
 }
 
@@ -60,4 +66,9 @@ a {
 	background-color: rgba(128,128,128,.1);
 	padding: 20px;
     border-radius: 10px;
+    text-align: center;
+}
+
+.solution {
+	margin: 0;
 }
