@@ -12,12 +12,21 @@ header {
 	color: white;
 }
 
+.pic-wrap img {
+	display: block;
+	margin: 0 auto 40px;
+	width: 215px;
+	height: auto;
+	max-width: 100%;
+	border-radius: 50%;
+}
+
 .details {
 	padding: 25px 0 10px;
+	text-align: center;
 }
 
 .details span {
-	/*font-size: 14px;*/
 	color: #83cbca;
 	padding-right: 5px;
 }
@@ -36,16 +45,8 @@ a {
 	}
 
 
-.pic-wrap img {
-	display: block;
-	margin: 0 auto 40px;
-	width: 215px;
-	height: auto;
-	max-width: 100%;
-	border-radius: 50%;
-}
-
-.guess {
+.guess, 
+.repo {
 	border-color: #83cbca;
     color: #83cbca;
     text-decoration: none;
@@ -54,7 +55,10 @@ a {
 
 	.guess:hover,
 	.guess:focus,
-	.guess:active {
+	.guess:active,
+	.repo:hover,
+	.repo:focus, 
+	.repo:active {
 		color: white;
 		background-color: #83cbca;
 	}
@@ -65,10 +69,19 @@ a {
 	position: relative;
 	background-color: rgba(128,128,128,.1);
 	padding: 20px;
+	margin-bottom: 50px;
     border-radius: 10px;
     text-align: center;
 }
 
 .solution {
-	margin: 0;
+	margin: 20px 0 0 0;
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.details {
+		text-align: left;
+	}
 }
